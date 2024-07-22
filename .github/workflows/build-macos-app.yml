@@ -30,12 +30,12 @@ jobs:
           pip install qtpy
 
 
-      - name: Build macOS app
-        run: |
-          pyinstaller main.spec
+      - name: Build application
+      run: |
+        python setup.py py2app 
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: macOS-app
-          path: dist/main.app
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: macos-app
+        path: dist/  # 上传 dist 目录中的文件
