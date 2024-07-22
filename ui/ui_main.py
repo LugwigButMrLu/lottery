@@ -3,19 +3,24 @@
 ################################################################################
 ## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.2
+## Created by: Qt User Interface Compiler version 6.6.3
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
+    QCursor, QFont, QFontDatabase, QGradient,
+    QIcon, QImage, QKeySequence, QLinearGradient,
+    QPainter, QPalette, QPixmap, QRadialGradient,
+    QTransform)
+from PySide6.QtWidgets import (QApplication, QGridLayout, QHBoxLayout, QLabel,
+    QLayout, QMainWindow, QSizePolicy, QSpacerItem,
+    QVBoxLayout, QWidget)
 
-from qfluentwidgets import PushButton
-from qfluentwidgets import PlainTextEdit
-from qfluentwidgets import DisplayLabel
-
+from qfluentwidgets import (DisplayLabel, PlainTextEdit, PushButton)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -43,22 +48,21 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setSizeConstraint(QLayout.SetDefaultConstraint)
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.verticalLayout.addItem(self.verticalSpacer_3)
 
         self.lbl_temp = DisplayLabel(self.centralwidget)
         self.lbl_temp.setObjectName(u"lbl_temp")
-        sizePolicy = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Preferred)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lbl_temp.sizePolicy().hasHeightForWidth())
         self.lbl_temp.setSizePolicy(sizePolicy)
         font1 = QFont()
-        font1.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font1.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font1.setPointSize(20)
         font1.setBold(True)
-        font1.setWeight(75)
         self.lbl_temp.setFont(font1)
         self.lbl_temp.setAlignment(Qt.AlignCenter)
 
@@ -66,13 +70,13 @@ class Ui_MainWindow(object):
 
         self.pt_list = PlainTextEdit(self.centralwidget)
         self.pt_list.setObjectName(u"pt_list")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.pt_list.sizePolicy().hasHeightForWidth())
         self.pt_list.setSizePolicy(sizePolicy1)
         font2 = QFont()
-        font2.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font2.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font2.setPointSize(16)
         self.pt_list.setFont(font2)
         self.pt_list.setReadOnly(True)
@@ -81,7 +85,7 @@ class Ui_MainWindow(object):
 
         self.pb_reset = PushButton(self.centralwidget)
         self.pb_reset.setObjectName(u"pb_reset")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.pb_reset.sizePolicy().hasHeightForWidth())
@@ -89,7 +93,7 @@ class Ui_MainWindow(object):
         self.pb_reset.setMinimumSize(QSize(150, 30))
         self.pb_reset.setMaximumSize(QSize(65535, 65535))
         font3 = QFont()
-        font3.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font3.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font3.setPointSize(20)
         self.pb_reset.setFont(font3)
 
@@ -102,16 +106,15 @@ class Ui_MainWindow(object):
         self.gridLayout.setObjectName(u"gridLayout")
         self.lbl_9 = DisplayLabel(self.centralwidget)
         self.lbl_9.setObjectName(u"lbl_9")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
         sizePolicy3.setHorizontalStretch(0)
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.lbl_9.sizePolicy().hasHeightForWidth())
         self.lbl_9.setSizePolicy(sizePolicy3)
         font4 = QFont()
-        font4.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font4.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font4.setPointSize(72)
         font4.setBold(True)
-        font4.setWeight(75)
         self.lbl_9.setFont(font4)
         self.lbl_9.setAlignment(Qt.AlignCenter)
 
@@ -122,7 +125,7 @@ class Ui_MainWindow(object):
         sizePolicy2.setHeightForWidth(self.lbl_13.sizePolicy().hasHeightForWidth())
         self.lbl_13.setSizePolicy(sizePolicy2)
         font5 = QFont()
-        font5.setFamily(u"\u6c49\u4eea\u7efc\u827a\u4f53\u7b80")
+        font5.setFamilies([u"\u6c49\u4eea\u7efc\u827a\u4f53\u7b80"])
         font5.setPointSize(20)
         self.lbl_13.setFont(font5)
         self.lbl_13.setAlignment(Qt.AlignCenter)
@@ -260,7 +263,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.verticalLayout_2.addItem(self.verticalSpacer_2)
 
@@ -269,14 +272,14 @@ class Ui_MainWindow(object):
         sizePolicy2.setHeightForWidth(self.lbl_prize_name.sizePolicy().hasHeightForWidth())
         self.lbl_prize_name.setSizePolicy(sizePolicy2)
         font6 = QFont()
-        font6.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font6.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font6.setPointSize(36)
         self.lbl_prize_name.setFont(font6)
         self.lbl_prize_name.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_2.addWidget(self.lbl_prize_name)
 
-        self.verticalSpacer_4 = QSpacerItem(20, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.verticalSpacer_4 = QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.verticalLayout_2.addItem(self.verticalSpacer_4)
 
@@ -294,14 +297,14 @@ class Ui_MainWindow(object):
         sizePolicy1.setHeightForWidth(self.lbl_prize_pic.sizePolicy().hasHeightForWidth())
         self.lbl_prize_pic.setSizePolicy(sizePolicy1)
         font7 = QFont()
-        font7.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font7.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font7.setPointSize(26)
         self.lbl_prize_pic.setFont(font7)
         self.lbl_prize_pic.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_2.addWidget(self.lbl_prize_pic)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_2.addItem(self.verticalSpacer)
 
@@ -314,7 +317,7 @@ class Ui_MainWindow(object):
         self.pb_start.setMinimumSize(QSize(150, 30))
         self.pb_start.setMaximumSize(QSize(65535, 65535))
         font8 = QFont()
-        font8.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font8.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font8.setPointSize(28)
         self.pb_start.setFont(font8)
 
@@ -336,34 +339,33 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addLayout(self.verticalLayout_2, 2, 3, 2, 1)
 
-        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.gridLayout_2.addItem(self.horizontalSpacer_5, 2, 0, 1, 1)
 
-        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.gridLayout_2.addItem(self.horizontalSpacer_4, 2, 4, 1, 1)
 
-        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.gridLayout_2.addItem(self.verticalSpacer_5, 1, 0, 1, 1)
 
-        self.verticalSpacer_6 = QSpacerItem(20, 80, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.verticalSpacer_6 = QSpacerItem(20, 80, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.gridLayout_2.addItem(self.verticalSpacer_6, 4, 0, 1, 1)
 
         self.lbl_awards_level = DisplayLabel(self.centralwidget)
         self.lbl_awards_level.setObjectName(u"lbl_awards_level")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Minimum)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
         sizePolicy4.setHorizontalStretch(0)
         sizePolicy4.setVerticalStretch(0)
         sizePolicy4.setHeightForWidth(self.lbl_awards_level.sizePolicy().hasHeightForWidth())
         self.lbl_awards_level.setSizePolicy(sizePolicy4)
         font9 = QFont()
-        font9.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
+        font9.setFamilies([u"\u5fae\u8f6f\u96c5\u9ed1"])
         font9.setPointSize(48)
         font9.setBold(True)
-        font9.setWeight(75)
         self.lbl_awards_level.setFont(font9)
         self.lbl_awards_level.setAlignment(Qt.AlignCenter)
 

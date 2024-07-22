@@ -1,10 +1,10 @@
 import os
 import random
 
-from PySide2.QtCore import QTimer, QUrl, Qt
-from PySide2.QtGui import QPixmap, QBrush, QPainter
-from PySide2.QtMultimedia import QMediaContent, QMediaPlayer
-from PySide2.QtWidgets import QWidget, QVBoxLayout, QLabel
+from PySide6.QtCore import QTimer, QUrl, Qt
+from PySide6.QtGui import QPixmap, QBrush, QPainter
+from PySide6.QtMultimedia import QMediaContent, QMediaPlayer
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel
 from qfluentwidgets import DisplayLabel
 from qtpy import QtWidgets
 
