@@ -1,0 +1,40 @@
+{
+    "font_color": [
+        "black",
+        "black",
+        "black",
+        "black"
+    ],
+    "awards_name_list": [
+        "友情奖",
+        "三等奖",
+        "二等奖",
+        "一等奖"
+    ],
+    "prize_name_list": [
+        "万事利日用礼盒",
+        "奥迪车模型",
+        "万事利蚕丝被",
+        "海蓝宝 裸石 1颗"
+    ],
+    "prize_name_list_2": [
+        "价值 298元",
+        "价值 458元",
+        "价值 600元",
+        "价值 2000元"
+    ],
+    "prize_pic_list": [
+        "./p4.jpg",
+        "./p3.jpg",
+        "./p2.jpg",
+        "./p1.jpg"
+    ],
+    "background_pic_list": [
+        "./b4.jpg",
+        "./b3.jpg",
+        "./b2.jpg",
+        "./b1.jpg"
+    ],
+    "start_number": 1,
+    "end_number": 111
+}

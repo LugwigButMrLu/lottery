@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon.png</file>
+        <file>lottery.svg</file>
+        <file>1.svg</file>
+        <file>2.svg</file>
+        <file>3.svg</file>
+        <file>4.svg</file>
+        <file>b1.jpg</file>
+        <file>b2.jpg</file>
+        <file>b3.jpg</file>
+        <file>b4.jpg</file>
+        <file>bgm.MP3</file>
+    </qresource>
+</RCC>
