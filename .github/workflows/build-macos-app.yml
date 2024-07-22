@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: '3.8'  # 确保缩进和格式正确
 
       - name: Install dependencies
         run: |
@@ -29,13 +29,12 @@ jobs:
           pip install PySide6-Fluent-Widgets
           pip install qtpy
 
-
       - name: Build application
-      run: |
-        python setup.py py2app 
+        run: |
+          python setup.py py2app
 
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: macos-app
-        path: dist/  # 上传 dist 目录中的文件
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: macos-app
+          path: dist/  # 上传 dist 目录中的文件

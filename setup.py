@@ -6,7 +6,7 @@ APP = ['main.py']  # 替换为你的主脚本文件名
 DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
-    'packages': ['PySide6','ui','frame', 'func'],
+    'packages': ['PySide6','ui','frame', 'func','qtpy'],
     'includes': ['qfluentwidgets'],
     'iconfile': 'icon.icns',  # 如果你有图标文件
     'plist': {
